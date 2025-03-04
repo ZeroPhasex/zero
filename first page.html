@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: medium;
+            margin: 0;
+            padding: 0;
+            color: rgb(252, 252, 252);
+        }
+        
+        header {
+            font-family: Sitka Heading Semibold;
+            background-color: #2a85ed;
+            color: rgb(255, 255, 255);
+            padding: 5rem;
+            text-align: center;
+            font-size: x-large;
+        }    
+        header h1 {
+            margin: 0;
+        }
+      
+        nav  {
+            display: inline;
+            margin: 0 1rem;
+            text-align: center;
+        }
+        
+        nav  a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 2rem;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #destinations {
+            text-align: center;
+            color: black;
+        }
+        
+        .destination-card {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .destination-card img {
+            width: 100%;
+            height: auto;
+            align-items: center;
+        }
+        
+        .destination-card h3 {
+            margin: 0.5rem 0;
+        }
+        
+        .destination-card p {
+            padding: 0 1rem 1rem;
+        }
+        
+        footer {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        .destination-card:hover{
+            text-decoration: underline;
+        }
+        .nav-links a {
+            font-size: 20px;
+            text-decoration: none;
+            margin: 0 1rem;
+            color: black;
+            padding: 0;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            
+        }
+        .nav-links a:hover {
+            background-color: rgb(193, 193, 193);
+            text-decoration: underline;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        
+        <div class="nav-links">
+            <ul>
+                <a href="login page.html" class="Login">Login</a>
+                <a href="destination.html">Destinations</a>
+                <a href="gallery.html">gallery</a>
+                <a href="community.html">community</a>
+                <a href="t&c.html">terms&conditions</a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="destinations">
+            <h1>TOP TRAVEL DESTINATIONS</h1>
+            <div class="destination-card">
+                <img src="https://i.pinimg.com/474x/36/fc/78/36fc786f3f3bd89f42090aa7673921fa.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The City of Light draws millions of visitors every year with its unforgettable ambiance.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://i.pinimg.com/474x/59/e8/13/59e813ce88cc75ef4ae71c4be5ad0eaf.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Tokyo offers a uniquely eclectic mix of traditional and modern attractions.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://i.pinimg.com/474x/00/d6/29/00d62994bb5d29231f2b37ede5ad3ec1.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps is one of the most dynamic and fast-paced cities in the world.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Travel Destinations. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through the Lens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2a85ed;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .gallery-container {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px;
+            gap: 30px;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .gallery-item {
+            position: relative;
+            flex-shrink: 0;
+            width: 60%;
+            min-width: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            scroll-snap-align: start;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .gallery-item .text-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-item .text-overlay h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .gallery-item .text-overlay p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .gallery-item .text-overlay .submit-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #2a85ed;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .gallery-item .text-overlay .submit-btn:hover {
+            background-color: #04087d;
+        }
+
+        .theme-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .theme-section .theme {
+            background-color: #2a85ed;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .theme-section .theme:hover {
+            background-color: #04087d;
+        }
+
+        footer {
+            background-color: #2a85ed;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Leaflet Map container */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+            background-color: #ddd;
+            border-radius: 10px;
+        }
+    </style>
+    <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Journey Through the Lens</h1>
+        <p>Explore the world through stunning photos, stories, and experiences</p>
+    </header>
+
+    <div class="gallery-container">
+
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <img src=" https://i.pinimg.com/474x/3e/2f/c6/3e2fc63b808da7036125d608471b3e57.jpg" alt="Destination 1">
+            <div class="text-overlay">
+                <h3>The Beach</h3>
+                <p>"The sunrise over the beach is worth waking up early for."</p>
+                
+            </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src=" https://i.pinimg.com/474x/3d/53/52/3d5352a741e85939a0b0d71859ec660e.jpg" alt="Destination 2">
+            <div class="text-overlay">
+                <h3>The Mountain</h3>
+                <p>"A hike to the peak offers breathtaking views of the valley below."</p>
+                
+            </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/474x/18/8b/e0/188be0aafd440c9ff808efd281f56909.jpg" alt="Destination 3">
+            <div class="text-overlay">
+                <h3> The Market</h3>
+                <p>"The local market is full of vibrant colors and exciting flavors."</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Section -->
+    <div class="theme-section">
+        <div class="theme">Adventure Awaits</div>
+        <div class="theme">Hidden Gems</div>
+        <div class="theme">Food Lover's Paradise</div>
+    </div>
+
+    <!-- Interactive Leaflet Map -->
+    <div id="map" class="map-container"></div>
+
+    <footer>
+        <p>&copy; 2025 Journey Through the Lens. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to initialize Leaflet map -->
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([51.505, -0.09], 2); // Coordinates for initial map view (latitude, longitude)
+
+        // Set the tile layer for the map (using OpenStreetMap as the base layer)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker on the map at a specific location
+        const marker = L.marker([12.336171732013852, 76.65625239938497]).addTo(map);
+
+        // Add a popup that appears when the marker is clicked
+        marker.bindPopup(' marker.').openPopup();
+    </script>
+</body>
+</html>

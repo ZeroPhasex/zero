@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 3px;
+            background-color: #2a85ed;
+            color: rgb(255, 255, 255);
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #04087d;
+        }
+
+        h1 {
+            color: rgb(21, 18, 195);
+            font-size: 28px;
+            text-align: center;
+        }
+
+        body {
+            background-image: url('https://i.pinimg.com/474x/5e/29/fb/5e29fb077e831a89b6761118785e89ab.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .forgot-password {
+            text-align: center;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .register-link a {
+            color: #2a85ed;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <!-- Form to handle login -->
+        <form action="first page.html" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required><br><br>
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button><br><br>
+                <button type="reset">Reset</button><br><br>
+            </div>
+            <div class="forgot-password">
+                <a href="forgot password.html">Forgot Password?</a>
+            </div>
+        </form>
+        
+        <!-- Add a registration link -->
+        <div class="register-link">
+            <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>

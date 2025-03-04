@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #2a85ed;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Top Destinations Section */
+.top-destinations {
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.top-destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a85ed;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Essential Travel Information */
+.travel-info {
+    padding: 30px 15px;
+    background-color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.travel-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2a85ed;
+}
+
+.travel-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.travel-info a {
+    color: #2a85ed;
+    text-decoration: none;
+}
+
+.travel-info a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal Images with Descriptions */
+.horizontal-images {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.horizontal-images h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a85ed;
+}
+
+.image-gallery {
+    display: block;
+    text-align: center;
+}
+
+.image-item {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a85ed;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gallery Link/Button */
+.gallery-link {
+    margin-top: 20px;
+}
+
+.gallery-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2a85ed;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.gallery-button:hover {
+    background-color: #04087d;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Our Top Destinations</h1>
+    </header>
+
+    <!-- Top Destinations in this season (Vertical List) -->
+    <section class="top-destinations">
+        <h2>Top Destinations This Season</h2>
+        <div class="destination-list">
+            <div class="destination">
+                <h3>RAJASTHAN</h3>
+                <p> Rajasthan is stunning in March when the weather is pleasant for exploring its palaces, forts, and deserts. The days are warm but not too hot, and evenings are cool.</p>
+            </div>
+            <div class="destination">
+                <h3>KASHMIR</h3>
+                <p>March is an ideal time to visit Kashmir as the snow still lingers in the mountains, but the temperature is comfortable for sightseeing.</p>
+            </div>
+            <div class="destination">
+                <h3>VARNASI</h3>
+                <p>Varanasi offers a spiritual and cultural experience like no other. The March weather is typically moderate, making it easier to explore the ghats and temples.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Travel Information -->
+    <section class="travel-info">
+        <h2>Essential Travel Information</h2>
+        <p>Many destinations in India are perfect for a getaway, 
+            as the weather begins to warm up, 
+            but it’s not yet the peak summer heat.but never miss the sun and destinations</p>
+        <p>Check out our <a href="#">full travel guide</a> for more details.</p>
+    </section>
+
+    <!-- Horizontal Images with Descriptions (One After Another) -->
+    <section class="horizontal-images">
+        <h2>Featured Destinations</h2>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="https://i.pinimg.com/474x/01/11/97/0111973de1a25d0bdbe92ce8b8a719b6.jpg" alt="RAJASTHAN">
+                <p class="description">A beautiful view of Rajasthan </p>
+            </div>
+            <div class="image-item">
+                <img src="https://i.pinimg.com/474x/5a/85/2b/5a852bd548e3f92e4e76705503742ff1.jpg" alt="KASHMIR">
+                <p class="description">Explore the wonders of Kashmir</p>
+            </div>
+            <div class="image-item">
+                <img src="https://i.pinimg.com/474x/2f/c7/b0/2fc7b0a91c87266d9a81176c61474693.jpg" alt="VARNASI">
+                <p class="description">Discover the magic of Varnasi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery with Hyperlink -->
+    <section class="photo-gallery">
+        <h2>Explore Our Full Photo Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/474x/75/21/43/752143da487d1ebf64db189ab172532c.jpg" alt="Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/474x/f1/c8/66/f1c866f8936b856dc7244df7eba586dc.jpg" alt="Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/474x/35/f3/37/35f33738268195327e99d614287049ef.jpg" alt="Photo 3">
+            </div>
+        </div>
+        <!-- Hyperlink to view full gallery -->
+        <div class="gallery-link">
+            <a href="gallery.html" class="gallery-button">Gallery</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Agency. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

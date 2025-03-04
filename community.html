@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #2a85ed;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #2a85ed;
+            margin-bottom: 10px;
+        }
+
+        .story, .photo, .review, .event {
+            margin-bottom: 15px;
+        }
+
+        .story, .photo, .review, .event {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .story img, .photo img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .story .title, .photo .title, .review .title, .event .title {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .story .content, .photo .content, .review .content, .event .content {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .rating {
+            margin-top: 5px;
+            color: #ffcc00;
+        }
+
+        .event .event-date {
+            font-weight: bold;
+            color: #2a85ed;
+        }
+
+        .event .location {
+            color: #555;
+        }
+
+        footer {
+            background-color: #2a85ed;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta-btn {
+            background-color: #2a85ed;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta-btn:hover {
+            background-color: #04087d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Community</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Travel Stories Section -->
+        <section id="travel-stories">
+            <h2>1. Travel Stories</h2>
+            <div class="story">
+                <h3 class="title">Story of the Week: Adventure in the Alps</h3>
+                <img src="https://i.pinimg.com/474x/d8/86/3f/d8863f7148c2ee080c89afadcd59b797.jpg" alt="Adventure in the Alps">
+                <p class="content">Our community member, Sarah, shares her unforgettable experience hiking in the Swiss Alps. From breathtaking views to unexpected encounters with local wildlife, this story is a must-read for any adventure seeker!</p>
+                <a href="#" class="cta-btn">Read Full Story</a>
+            </div>
+        </section>
+
+        <!-- Photo Sharing Section -->
+        <section id="photo-sharing">
+            <h2>2. Photo Sharing</h2>
+            <div class="photo">
+                <h3 class="title">Sunny Days in Bali</h3>
+                <img src="https://i.pinimg.com/474x/7f/7e/a1/7f7ea1ab4e73088d97536b754c4da7cd.jpg" alt="Bali Beach">
+                <p class="content">A stunning photo of the white-sand beaches and crystal-clear waters of Bali. Share your favorite travel photos with the community!</p>
+                <a href="#" class="cta-btn">Upload Your Photo</a>
+            </div>
+        </section>
+
+        <!-- Q&A Section -->
+        <section id="qa-section">
+            <h2>3. Q&A Section</h2>
+            <div class="qa-question">
+                <h3 class="title">What’s the best time to visit Italy?</h3>
+                <p class="content">Looking to explore Italy? Ask our community for the best tips on the ideal time to visit, things to do, and travel hacks!</p>
+                <a href="#" class="cta-btn">Ask a Question</a>
+            </div>
+        </section>
+
+        <!-- Destination Reviews Section -->
+        <section id="destination-reviews">
+            <h2>4. Destination Reviews</h2>
+            <div class="review">
+                <h3 class="title">Paris, France</h3>
+                <div class="rating">★★★★★</div>
+                <p class="content">An enchanting city filled with art, history, and world-class cuisine. The Eiffel Tower is a must-see, and strolling along the Seine River is unforgettable!</p>
+            </div>
+        </section>
+
+        <!-- Community Events Section -->
+        <section id="community-events">
+            <h2>5. Community Events</h2>
+            <div class="event">
+                <h3 class="title">Upcoming Travel Webinar: "Top Destinations for 2025"</h3>
+                <p class="event-date">Date: April 10, 2025</p>
+                <p class="location">Location: Online (Zoom)</p>
+                <p class="content">Join us for an exciting webinar where travel experts will discuss the best travel destinations to visit in 2025. Don't miss out on this opportunity to plan your next trip!</p>
+                <a href="#" class="cta-btn">RSVP Now</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Travel Community. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
